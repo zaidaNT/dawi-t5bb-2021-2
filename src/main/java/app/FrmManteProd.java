@@ -181,12 +181,8 @@ public class FrmManteProd extends JFrame {
 			JOptionPane.showMessageDialog(null, "Lista vacía");
 		} else {
 			for (Productos p : lstProductos) {
-				Object datos[] = {p.getIdprod(),
-								  p.getDescripcion(),
-								  p.getStock(),
-								  p.getPrecio(),
-								  p.getIdcategoria(),
-								  p.getEstado()};
+				Object datos[] = {p.getIdprod(), p.getDescripcion(), p.getStock(),
+								  p.getPrecio(), p.getIdcategoria(), p.getEstado()};
 				modelo.addRow(datos);
 			}
 		}
